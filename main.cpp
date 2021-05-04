@@ -1,65 +1,34 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main()
 {
-	//DECLARACION DE VARIABLES
-	int d1, d2, m1, m2, a1, a2, r1,r2;
+    string aux;
+    int aux1;
+    /*
+     * Escriba un programa que reciba una cadena de texto y que muestre en pantalla cual es la palabra más común en el texto
+     * Ejemplo 1: "todos los numeros que son pares son divisibles entre dos" ---> "son" es la palabra más repetida
+     * Ejemplo 2: "ayer no trabajé porque ayer era día del trabajo no importa ayer era lunes" ---> "ayer" es la palabra más repetida
+     * Consejo: El docente solo va a probar textos en minisculas y que solo tengan letras y espacios
+     */
+    cout << "Challenge #3" << endl;
+    string texto="";
+    cout << "Ingrese un texto cualquiera:" << endl;
+    getline(cin, texto);
+    cout << texto;
 
-	cout << "CALENDARIO" << endl << endl;
+    aux = texto;
+    aux1 = aux;
 
-	cout << "PRIMERA FECHA---------" << endl;
-	cout << "Ingrese dia: ";
-	cin >> d1;
-	cout << "Ingrese mes: ";
-	cin >> m1;
-	cout << "Ingrese anio: ";
-	cin >> a1;
+    if (aux1 = aux)
+    {
+        cout << "La palabra que mas se repite es:" << endl;
+        cout << aux << endl;
+    }
+    
 
-	cout << endl << "SEGUNDA FECHA---------" << endl;
-	cout << "Ingrese dia: ";
-	cin >> d2;
-	cout << "Ingrese mes: ";
-	cin >> m2;
-	cout << "Ingrese anio: ";
-	cin >> a2;
-
-	//evaluacion:  4/3/2021
-	//   10/5/2021
-	//   10/5/2023
-
-	if (  (a1 - 2021) < (a2 - 2021) ) {
-		cout << "FECHA 1 es mas cercana";
-	}
-	else if ( (a1 - 2021) < (a2 - 2021) ) {
-		cout << "FECHA 2 es mas cercana";
-	}
-	else {
-		//iguales
-		if ((m1 - 5) < (m2 - 5)) {
-			cout << "FECHA 1 es mas cercana";
-		}
-		else if ((m1 - 5) > (m2 - 5)) {
-			cout << "FECHA 2 es mas cercana";
-		}
-		else {
-			//meses son iguales
-			if ((d1 - 4) < (d2 - 4)) {
-				cout << "FECHA 1 es mas cercana";
-			}
-			else if ((d1 - 4) > (d2 - 4)) {
-				cout << "FECHA 2 es mas cercana";
-			}
-			else {
-				//FECHAS IGUALES
-				cout << "AMBAS FECHAS SON IDENTICAS";
-			}
-		}
-	}
-
-	cout << endl << endl;
-	
-	//ENTRADA DE DATOS
-	system("pause");
+    // Comience a programar desde aquí
+    return 0;
 }
