@@ -5,6 +5,8 @@ using namespace std;
 
 int main()
 {
+    string aux;
+    int aux1;
     /*
      * Escriba un programa que reciba una cadena de texto y que muestre en pantalla cual es la palabra más común en el texto
      * Ejemplo 1: "todos los numeros que son pares son divisibles entre dos" ---> "son" es la palabra más repetida
@@ -16,6 +18,17 @@ int main()
     cout << "Ingrese un texto cualquiera:" << endl;
     getline(cin, texto);
     cout << texto;
+
+    aux = texto;
+    aux1 = aux;
+
+    if (aux1 = aux)
+    {
+        cout << "La palabra que mas se repite es:" << endl;
+        cout << aux << endl;
+    }
+    
+
     // Comience a programar desde aquí
     return 0;
 }
