@@ -63,5 +63,5 @@ int main()
 	//ENTRADA DE DATOS
 	system("pause");
   
-  cin.ignore();
+  
 }
